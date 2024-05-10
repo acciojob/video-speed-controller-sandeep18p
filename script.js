@@ -1,4 +1,4 @@
-const video = document.querySelector('.player__video'); // Updated class selector
+const video = document.querySelector('.player__video');
 const progress = document.querySelector('.progress__filled');
 const playerButton = document.querySelector('.player__button');
 const volumeInput = document.querySelector('input[name="volume"]');
@@ -10,11 +10,10 @@ const skipButton = document.querySelector('.skip');
 function togglePlay() {
   if (video.paused) {
     video.play();
-    playerButton.textContent = '❚ ❚'; // Change button text to pause icon
   } else {
     video.pause();
-    playerButton.textContent = '►'; // Change button text to play icon
   }
+  playerButton.classList.toggle('toggle'); // Toggle the 'toggle' class
 }
 
 // Update the volume of the video
