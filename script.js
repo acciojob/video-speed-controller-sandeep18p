@@ -1,4 +1,4 @@
-const video = document.querySelector('.flex');
+const video = document.querySelector('.player__video'); // Updated class selector
 const progress = document.querySelector('.progress__filled');
 const playerButton = document.querySelector('.player__button');
 const volumeInput = document.querySelector('input[name="volume"]');
